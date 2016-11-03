@@ -771,16 +771,9 @@ describe('Adal', function () {
     });
 
     it('tests handleWindowCallback function for LOGIN_REQUEST', function () {
-<<<<<<< HEAD
         window.location = {};
         window.location.hash = '#/id_token=' + IDTOKEN_MOCK;
         window.location.href = 'www.test.com' + '#/id_token=' + IDTOKEN_MOCK;
-=======
-        window.location = {
-            hash: '#/id_token=' + IDTOKEN_MOCK,
-            href: 'href'
-        };
->>>>>>> switch off navigation to Login_Request Url
         var _getRequestInfo = adal.getRequestInfo;
         adal.getRequestInfo = function () {
             return {
